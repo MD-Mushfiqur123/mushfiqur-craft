@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mushfiqur Craft</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container"></div>
+    
+    <div id="ui-layer">
+      <div id="crosshair">+</div>
+      <div id="hotbar">
+        <div class="slot active"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </div>
+      <div id="debug-info">
+        <p>FPS: <span id="fps-counter">0</span></p>
+        <p>Coords: <span id="coords">0, 0, 0</span></p>
+        <p>Biome: <span id="biome-display">Unknown</span></p>
+      </div>
+      <div id="instructions">
+        Click to Play<br>
+        WASD to Move, SPACE to Jump<br>
+        Click to Mine, Right Click to Place
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
